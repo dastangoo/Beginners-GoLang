@@ -1,14 +1,22 @@
-// import "fmt"
-// import "os"
+package main
 
-// import "fmt"; import "os"
+import (
+  "fmt"
+)
 
+const c = "C"
+var v int = 5
+type T struct{
+  
+}
 
-// import (
-//   "fmt"
-//   "os"
-// )
+func init()  {
+  // Initialization of package
+}
 
-// import ("fmt"; "os")
-
-import fm "fmt"
+func main()  {
+  var a int 
+  Func1()
+  // ...
+  fmt.Println(a)
+}
