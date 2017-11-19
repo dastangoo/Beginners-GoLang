@@ -1,47 +1,45 @@
 package main
-import "fmt"
+import (
+  "fmt"
+  "os"
+)
 func main()  {
-  // const beef, two, c = "meat", 2, "veg"
-  // const Monday, Tuesday, Wednesday, Thursday, Friday, Saturday = 1, 2, 3, 4, 5, 6
-  // 
-  // 
-  // const (
-  //   Monday, Tuesday, Wednesday = 1, 2, 3
-  //   Thursday, Friday, Saturday = 4, 5, 6
-  // )
-  // 
-  // const (
-  //   unknown = 0
-  //   Female = 1
-  //   Male = 2
-  // )
-  // 
-  // const (
-  //   a = iota
-  //   b 
-  //   c
-  // )
-  // 
-  // const (
-  //   Sunday = iota
-  //   Monday
-  //   Tuesday
-  //   Wednesday
-  //   Thursday
-  //   Friday
-  //   Saturday
-  // )
+  // var a, b *int
+  // var a int
+  // var b bool
+  // var str string
 
-  type Color int 
-  const (
-    RED Color = iota // 0
-    ORANGE // 1
-    YELLOW // 2
-    GREEN // 3
-    BLUE // 4
-    INDIGO // 5
-    VIOLET // 6
-  )
-  fmt.Println(YELLOW);  
+  // var (
+  //   a int
+  //   b bool
+  //   str string
+  // )
+  
+  // var a int = 15
+  // var i = 5
+  // var b bool = false
+  // var str string = "Go says hello to the world"
+  
+  // var a = 15
+  // var b = false
+  // var str = "Go says hello to the world"
+
+  // var (
+  //   a = 15
+  //   b = false
+  //   str = "Go says hello to the world"
+  //   numShips = 50
+  //   city string
+  // )
+  
+  // var (
+  //   HOME = os.Getenv("HOME")
+  //   USER = os.Getenv("USER")
+  //   GOROOT = os.Getenv("GOROOT")
+  // )
+  
+  // var goos string = os.Getenv("GOOS")
+  path := os.Getenv("PATH")
+  fmt.Printf("PATH is: %s\n", path);  
 }
 
