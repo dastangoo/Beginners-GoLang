@@ -2,28 +2,44 @@ package main
 
 import (
   "fmt"
+  // "time"
+  // "rand"
 )
 
 
 func main()  {
-  type ByteSize float64
-  const (
-    _ = iota // ignore the first value by assigning to blank identifier
-    KB ByteSize = 1 << (10 * iota)
-    MB
-    GB
-    TB
-    PB
-    EB
-    ZB
-    YB
-  )
-  type BitFlag int
-  const (
-    Active BitFlag = 1 << iota // 1 << 0 == 1
-    Send                       // 1 << 1 == 2
-    Receive                    // 1 << 2 == 4
-  )
-  flag := Active | Send
-  fmt.Println(flag)
+  // a , b := 1, 2
+  // 
+  // b += a
+  // b -= a
+  // b *= a
+  // b /= a
+  // b %= a
+  // b++
+  // b--
+  // fmt.Println(9/4)
+  // fmt.Println(9%4)
+  // fmt.Println(a)
+  // fmt.Println(b)
+  // for i := 0; i < 10; i++ {
+  //   a := rand.Int()
+  //   fmt.Printf("%d /", a)
+  // }
+  // 
+  // for i := 0; i < 5; i++ {
+  //   r := rand.Intn(8)
+  //   fmt.Printf("%d /", r)
+  // }
+  // 
+  // fmt.Printf()
+  // timens := int64(time.Now().Nano)
+  // rand.Seed(timens)
+  // for i := 0; i  < 10; i++ {
+  //   fmt.Printf("%2.2f /", 100*rand.Float32())
+  // }
+  
+  type TZ int
+  var a, b TZ = 3, 4
+  c := a + b
+  fmt.Printf("c has the value: %d", c) // prints c has value 7
 }
