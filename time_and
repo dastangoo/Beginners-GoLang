@@ -1,0 +1,3 @@
+time.Now()
+t.Day()
+t.Minute()
