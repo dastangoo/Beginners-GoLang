@@ -1,0 +1,49 @@
+if value := process(data); value > max {
+  ...
+  if value := process(data); value > max {
+    ...
+  }
+}
+--------
+value, err := pack1.Function1(param1)
+if err != nill {
+  fmt.Printf("An error occurred in pack1.Function1 with parameter %v", param1)
+  return err
+}
+// noraml case, continue execution: 
+---------
+if err != nil {
+  fmt.Printf("Program stopping with error %v", err)
+  os.Exit(1)
+}
+------
+f, err := os.Open(name)
+if err != nil {
+  return err
+}
+do something
+----
+if err := file.Chmod(0644); err != nill {
+  fmt.Println(err)
+  return err
+}
+------
+if value, ok := readData(); ok {
+  ...
+}
+-----
+func mySqrt(f float64) (v float64, ok bool) {
+  if f < 0 { return }  // error case
+  return math.Sqrt(f), true
+}
+fun main() {
+  t := mySqrt(25.0)
+  ftm.Println(t)
+}
+----------
+func atoi(s string) (n int) {
+  n, _ = strconv.Atoi(s)
+  return n
+}
+
+count, err := fmt.Prntln(x) // number of bytes printed, nil or 0, error 
