@@ -1,0 +1,32 @@
+switch var1 {
+  case val1: 
+    ...
+  case val2:
+    ...
+  default:
+    ...
+}
+------------
+switch(i) {
+  case 0: // Empty case body
+  case 1:
+    f() // f is not called when i == 0
+    
+}
+------------
+switch(i) {
+  case 0: fallthrough
+  case 1: 
+    f() // f is called when i == 0
+  
+}
+--------------
+switch {
+  case i < 0:
+    f1()
+  case i == 0:
+    f2()
+  default: 
+    f3()
+  ...
+}
