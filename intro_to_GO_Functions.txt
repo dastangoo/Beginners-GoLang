@@ -1,0 +1,7 @@
+func g() {
+
+}
+--------------
+pack1.Function(arg1, arg2, ...argn)
+------
+type bin0p func(int, int) int
