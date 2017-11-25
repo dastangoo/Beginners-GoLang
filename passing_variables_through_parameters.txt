@@ -1,0 +1,21 @@
+func myFunc(a, b, arg, ...int) {}
+---------
+type Options struct {
+ par1 type1,
+ par2 type2
+      ... 
+}
+------
+F1(a, b, Optios {par1: val1, par2: val2})
+-------
+func typecheck(..., ..., values ... interface{}) {
+  for _, value := range values {
+   switch v := value.(type) {
+    case int: ...
+    case float: ...
+    case string: ...
+    case bool: ...
+    default: ...
+   }
+  }
+}
