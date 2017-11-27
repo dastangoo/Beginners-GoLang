@@ -3,7 +3,6 @@ import "fmt"
 
 func main()  {
   var mapLit map[string]int
-  // var mapAssigned map[string]float32
   var mapAssigned map[string]int
   
   mapLit = map[string]int{"one": 1, "two": 2}
@@ -14,6 +13,8 @@ func main()  {
   mapCreated["key2"] = 3.14159
   mapAssigned["two"] = 3
   
-  fmt.Printf("Map created at \"one\" is: %d\n", mapLit["one"])
-  fmt.Printf("Map created at \"two\" is: %d\n", mapLit["two"])
+  fmt.Printf("Map literal at \"one\" is: %d\n", mapLit["one"])
+  fmt.Printf("Map created at \"key2\" is: %f\n", mapCreated["key2"])
+  fmt.Printf("Map assigned at \"two\" is: %d\n", mapAssigned["two"])
+  fmt.Printf("Map literal at \"ten\" is: %d\n", mapLit["ten"])
 }
