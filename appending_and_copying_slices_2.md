@@ -1,4 +1,5 @@
 # Appending and Copying Slices 2
+```go
 len([]int(s))
 
 utf8.RunCountInStrings(s)
@@ -29,3 +30,4 @@ func Compare(a, b []byte) int {
     }
   }
 }
+```
