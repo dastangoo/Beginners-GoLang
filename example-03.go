@@ -24,7 +24,7 @@ func main()  {
   sort.Strings(keys)
   fmt.Println()
   fmt.Println("sorted:")
-  for k, v := range keys {
+  for _, k := range keys {
     fmt.Printf("Keys: %v, Value: %v /", k, barVal[k])
   }
 }
