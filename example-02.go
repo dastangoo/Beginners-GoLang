@@ -15,7 +15,8 @@ func main()  {
   // Version B:
   items2 := make([]map[int]int, 5)
   for _, item := range items {
-    
+      item = make(map[int]int, 1)
+      item[1] = 2
   }
-
+  fmt.Printf("Version B: Value of items: %v\n", items2)
 }
